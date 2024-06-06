@@ -32,7 +32,7 @@ function loadAnimation() {
     t1.to("#loader", {
         opacity: 0,
         duration: 0.2,
-        delay: 4,
+        delay: 2,
     });
 
     t1.from("#page1", {
@@ -40,10 +40,17 @@ function loadAnimation() {
         y: 1600,
         ease: Power4,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.6,
     });
     t1.to("#loader", {
         display: "none"
+    })
+    t1.from("#nav",{
+        opacity:0
+    })
+    t1.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1 ",{
+        y:120,
+        stagger:0.2,
     })
 
 }
