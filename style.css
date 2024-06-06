@@ -12,6 +12,16 @@ html,body{
 }
 /* 0b0b0b */
 
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.717);
+    position: fixed;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -99,4 +109,36 @@ html,body{
     width: 100%;
     background: #151515;
     /* background: red; */
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 4.5vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 27%;
+}
+.hero:nth-child(2){
+    margin-top: 20vh;
+}
+.hero h1{ 
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 7vw;
 }
